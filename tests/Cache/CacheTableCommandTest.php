@@ -26,7 +26,6 @@ class CacheTableCommandTest extends TestCase
             $composer = m::mock(Composer::class)
         );
         $creator = m::mock(MigrationCreator::class)->shouldIgnoreMissing();
-
         $app = new Application;
         $app->useDatabasePath(__DIR__);
         $app['migration.creator'] = $creator;

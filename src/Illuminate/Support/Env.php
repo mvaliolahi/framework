@@ -53,6 +53,8 @@ class Env
      */
     public static function getRepository()
     {
+
+
         if (static::$repository === null) {
             $adapters = array_merge(
                 [new EnvConstAdapter, new ServerConstAdapter],
